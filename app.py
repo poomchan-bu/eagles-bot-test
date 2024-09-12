@@ -1,7 +1,13 @@
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 from dotenv import load_dotenv
 load_dotenv()
+
 import streamlit as st
 st.set_page_config(page_title="Eagles", page_icon=":bird:")
+
 from langchain_community.document_loaders import CSVLoader
 from langchain_chroma import Chroma
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
