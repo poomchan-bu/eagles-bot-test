@@ -1,22 +1,56 @@
 name: eagle-llm
 channels:
+  - conda-forge
   - defaults
 dependencies:
+  - appnope=0.1.4=pyhd8ed1ab_0
+  - asttokens=2.4.1=pyhd8ed1ab_0
   - bzip2=1.0.8=h80987f9_6
-  - ca-certificates=2024.7.2=hca03da5_0
+  - ca-certificates=2024.8.30=hf0a4a13_0
+  - comm=0.2.2=pyhd8ed1ab_0
+  - debugpy=1.6.7=py312h313beb8_0
+  - decorator=5.1.1=pyhd8ed1ab_0
+  - exceptiongroup=1.2.2=pyhd8ed1ab_0
+  - executing=2.1.0=pyhd8ed1ab_0
   - expat=2.6.3=h313beb8_0
+  - importlib_metadata=8.5.0=hd8ed1ab_0
+  - ipykernel=6.29.5=pyh57ce528_0
+  - jedi=0.19.1=pyhd8ed1ab_0
+  - jupyter_client=8.6.2=pyhd8ed1ab_0
+  - jupyter_core=5.7.2=py312hca03da5_0
   - libcxx=14.0.6=h848a8c0_0
   - libffi=3.4.4=hca03da5_1
+  - libsodium=1.0.18=h27ca646_1
+  - matplotlib-inline=0.1.7=pyhd8ed1ab_0
   - ncurses=6.4=h313beb8_0
-  - openssl=3.0.15=h80987f9_0
+  - nest-asyncio=1.6.0=pyhd8ed1ab_0
+  - openssl=3.3.2=h8359307_0
+  - packaging=24.1=pyhd8ed1ab_0
+  - parso=0.8.4=pyhd8ed1ab_0
+  - pexpect=4.9.0=pyhd8ed1ab_0
+  - pickleshare=0.7.5=py_1003
   - pip=24.2=py312hca03da5_0
+  - platformdirs=4.3.2=pyhd8ed1ab_0
+  - prompt-toolkit=3.0.47=pyha770c72_0
+  - psutil=5.9.0=py312h80987f9_0
+  - ptyprocess=0.7.0=pyhd3deb0d_0
+  - pure_eval=0.2.3=pyhd8ed1ab_0
+  - pygments=2.18.0=pyhd8ed1ab_0
   - python=3.12.4=h99e199e_1
   - readline=8.2=h1a28f6b_0
   - setuptools=72.1.0=py312hca03da5_0
+  - six=1.16.0=pyh6c4a22f_0
   - sqlite=3.45.3=h80987f9_0
+  - stack_data=0.6.2=pyhd8ed1ab_0
   - tk=8.6.14=h6ba3021_0
+  - tornado=6.4.1=py312h80987f9_0
+  - traitlets=5.14.3=pyhd8ed1ab_0
+  - typing_extensions=4.12.2=pyha770c72_0
+  - wcwidth=0.2.13=pyhd8ed1ab_0
   - wheel=0.43.0=py312hca03da5_0
   - xz=5.4.6=h80987f9_1
+  - zeromq=4.3.5=h313beb8_0
+  - zipp=3.20.1=pyhd8ed1ab_0
   - zlib=1.2.13=h18a0788_1
   - pip:
       - aiohappyeyeballs==2.4.0
@@ -25,55 +59,73 @@ dependencies:
       - altair==5.4.1
       - annotated-types==0.7.0
       - anyio==4.4.0
-      - appnope==0.1.4
-      - asttokens==2.4.1
+      - asgiref==3.8.1
       - attrs==24.2.0
       - backcall==0.2.0
+      - backoff==2.2.1
+      - bcrypt==4.2.0
       - beautifulsoup4==4.12.3
       - bleach==6.1.0
       - blinker==1.8.2
+      - build==1.2.2
       - cachetools==5.5.0
       - certifi==2024.8.30
       - charset-normalizer==3.3.2
+      - chroma-hnswlib==0.7.3
+      - chromadb==0.5.3
       - click==8.1.7
+      - coloredlogs==15.0.1
       - dataclasses-json==0.6.7
-      - decorator==5.1.1
       - defusedxml==0.7.1
+      - deprecated==1.2.14
       - distro==1.9.0
       - docopt==0.6.2
-      - executing==2.1.0
       - faiss-cpu==1.8.0.post1
+      - fastapi==0.114.1
       - fastjsonschema==2.20.0
+      - filelock==3.16.0
+      - flatbuffers==24.3.25
       - frozenlist==1.4.1
+      - fsspec==2024.9.0
       - gitdb==4.0.11
       - gitpython==3.1.43
+      - google-auth==2.34.0
+      - googleapis-common-protos==1.65.0
+      - grpcio==1.66.1
       - h11==0.14.0
       - httpcore==1.0.5
+      - httptools==0.6.1
       - httpx==0.27.2
+      - huggingface-hub==0.24.6
+      - humanfriendly==10.0
       - idna==3.8
+      - importlib-metadata==8.4.0
+      - importlib-resources==6.4.5
       - ipython==8.12.3
-      - jedi==0.19.1
       - jinja2==3.1.4
       - jiter==0.5.0
       - jsonpatch==1.33
       - jsonpointer==3.0.0
       - jsonschema==4.23.0
       - jsonschema-specifications==2023.12.1
-      - jupyter-client==8.6.2
-      - jupyter-core==5.7.2
       - jupyterlab-pygments==0.3.0
+      - kubernetes==30.1.0
       - langchain==0.2.16
+      - langchain-chroma==0.1.3
       - langchain-community==0.2.16
       - langchain-core==0.2.39
       - langchain-openai==0.1.23
       - langchain-text-splitters==0.2.4
       - langsmith==0.1.118
+      - lark==1.2.2
       - markdown-it-py==3.0.0
       - markupsafe==2.1.5
       - marshmallow==3.22.0
-      - matplotlib-inline==0.1.7
       - mdurl==0.1.2
       - mistune==3.0.2
+      - mmh3==4.1.0
+      - monotonic==1.6
+      - mpmath==1.3.0
       - multidict==6.1.0
       - mypy-extensions==1.0.0
       - narwhals==1.7.0
@@ -81,26 +133,35 @@ dependencies:
       - nbconvert==7.16.4
       - nbformat==5.10.4
       - numpy==1.26.4
+      - oauthlib==3.2.2
+      - onnxruntime==1.19.2
       - openai==1.44.1
+      - opentelemetry-api==1.27.0
+      - opentelemetry-exporter-otlp-proto-common==1.27.0
+      - opentelemetry-exporter-otlp-proto-grpc==1.27.0
+      - opentelemetry-instrumentation==0.48b0
+      - opentelemetry-instrumentation-asgi==0.48b0
+      - opentelemetry-instrumentation-fastapi==0.48b0
+      - opentelemetry-proto==1.27.0
+      - opentelemetry-sdk==1.27.0
+      - opentelemetry-semantic-conventions==0.48b0
+      - opentelemetry-util-http==0.48b0
       - orjson==3.10.7
-      - packaging==24.1
+      - overrides==7.7.0
       - pandas==2.2.2
       - pandocfilters==1.5.1
-      - parso==0.8.4
-      - pexpect==4.9.0
-      - pickleshare==0.7.5
       - pillow==10.4.0
       - pipreqs==0.5.0
-      - platformdirs==4.3.2
-      - prompt-toolkit==3.0.47
-      - protobuf==5.28.1
-      - ptyprocess==0.7.0
-      - pure-eval==0.2.3
+      - posthog==3.6.5
+      - protobuf==4.25.4
       - pyarrow==17.0.0
+      - pyasn1==0.6.1
+      - pyasn1-modules==0.4.1
       - pydantic==2.9.1
       - pydantic-core==2.23.3
       - pydeck==0.9.1
-      - pygments==2.18.0
+      - pypika==0.48.9
+      - pyproject-hooks==1.1.0
       - python-dateutil==2.9.0.post0
       - python-dotenv==1.0.1
       - pytz==2024.2
@@ -109,27 +170,36 @@ dependencies:
       - referencing==0.35.1
       - regex==2024.9.11
       - requests==2.32.3
+      - requests-oauthlib==2.0.0
       - rich==13.8.1
       - rpds-py==0.20.0
-      - six==1.16.0
+      - rsa==4.9
+      - shellingham==1.5.4
       - smmap==5.0.1
       - sniffio==1.3.1
       - soupsieve==2.6
       - sqlalchemy==2.0.34
       - stack-data==0.6.3
+      - starlette==0.38.5
       - streamlit==1.38.0
+      - sympy==1.13.2
       - tenacity==8.5.0
       - tiktoken==0.7.0
       - tinycss2==1.3.0
+      - tokenizers==0.20.0
       - toml==0.10.2
-      - tornado==6.4.1
       - tqdm==4.66.5
-      - traitlets==5.14.3
-      - typing-extensions==4.12.2
+      - typer==0.12.5
       - typing-inspect==0.9.0
       - tzdata==2024.1
       - urllib3==2.2.2
-      - wcwidth==0.2.13
+      - uvicorn==0.30.6
+      - uvloop==0.20.0
+      - watchfiles==0.24.0
       - webencodings==0.5.1
+      - websocket-client==1.8.0
+      - websockets==13.0.1
+      - wrapt==1.16.0
       - yarg==0.1.9
       - yarl==1.11.1
+prefix: /opt/miniconda3/envs/eagle-llm
